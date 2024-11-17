@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Projeto 010 - Restaurante Bamboo</title>
+    <style>
+        /* Estilos existentes */
+        body {
+            font-family: system-ui, sans-serif;
+            background-image: url('img/f.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: green;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+			text-decoration: none;
+        }
+        .reserve-button {
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            padding: 5px 5px;
+            background-color: #ff9900;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .reserve-button:hover {
+            background-color: #e68a00;
+			text-decoration: none;
+        }
+       
+	    .footer-container {
+            display: flex;
+            flex-wrap: wrap; /* Permite que as colunas quebrem em linha quando necessário */
+            justify-content: space-between; /* Distribui as colunas uniformemente */
+            padding: 20px;
+            background-color: green; /* Cor de fundo para o rodapé */
+            color: #fff; /* Cor do texto */
+        }
+
+        .footer-left, .footer-center, .footer-right {
+            flex: 1; /* Cada coluna ocupa uma parte igual do espaço */
+            margin: 0 10px; /* Espaçamento entre as colunas */
+            min-width: 250px; /* Define uma largura mínima para cada coluna */
+        }
+
+        .footer-left h2, .footer-center h2, .footer-right h2 {
+            margin-bottom: 15px; /* Espaçamento entre o título e o texto */
+        }
+
+        /* Media Query para telas menores */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column; /* Empilha as colunas verticalmente em telas menores */
+                align-items: center; /* Centraliza os itens */
+            }
+            .footer-left, .footer-center, .footer-right {
+                margin: 10px 0; /* Ajusta o espaçamento entre as colunas empilhadas */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho e navegação -->
+     <header>
+        <h1>Sabores da Terra</h1>
+        <nav>
+            <a href="intex.html">Inicio</a>
+			<a href="menu.html">Menu</a>
+            <a href="pratosprincipais.html">Pratos Principais</a>
+            <a href="sobremesa.html">Sobremesas</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <a href="reserva.html" class="reserve-button">Reservar</a>
+    </header>
+
+    <!-- Seção de sobremesas-->
+	<!-- Seção de Sobremesas -->
+<section id="sobremesas" style="padding: 50px; background-color: rgba(255, 250, 250, 0.8); text-align: center;">
+    <h2 style="font-size: 2.5rem; margin-bottom: 30px; color: #333;">Sobremesas</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+        
+        <!-- Card de Sobremesa 1 -->
+        <div class="sobremesa-card">
+            <img src="img/sobremesa/s1.jpg" alt="Sobremesa 1" class="sobremesa-imagem">
+            <h3 class="sobremesa-nome">Cheesecake de Morango Vegan</h3>
+            <p class="sobremesa-descricao">Cheesecake cremoso feito com leite de coco e coberto com morangos frescos.</p>
+        </div>
+
+        <!-- Card de Sobremesa 2 -->
+        <div class="sobremesa-card">
+            <img src="img/sobremesa/s2.jpg" alt="Sobremesa 2" class="sobremesa-imagem">
+            <h3 class="sobremesa-nome">Torta de Maçã e Canela</h3>
+            <p class="sobremesa-descricao">Uma deliciosa torta de maçã com toque de canela, servida com sorvete vegano.</p>
+        </div>
+
+        <!-- Card de Sobremesa 3 -->
+        <div class="sobremesa-card">
+            <img src="img/sobremesa/s3.jpg" alt="Sobremesa 3" class="sobremesa-imagem">
+            <h3 class="sobremesa-nome">Mousse de Chocolate</h3>
+            <p class="sobremesa-descricao">Mousse suave e cremosa feita com chocolate amargo e leite de amêndoas.</p>
+        </div>
+        
+    </div>
+</section>
+
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2>Sobre o Restaurante</h2>
+                <p>O Restaurante Sabores da Terra é especializado em uma cozinha vegana deliciosa e inovadora, oferecendo uma variedade de pratos que celebram os sabores autênticos da natureza. Nossa missão é proporcionar uma experiência gastronômica única que agrada tanto aos paladares veganos quanto aos não veganos.</p>
+                <p>Acreditamos que a comida deve ser uma experiência sensorial. Por isso, cada prato é preparado com ingredientes frescos e orgânicos, provenientes de fornecedores locais. Nossa equipe de chefs talentosos está sempre à procura de novas combinações e técnicas para surpreender nossos clientes.</p>
+            </div>
+            
+            <div class="footer-center">
+                <h2>Mais</h2>
+                <h6>Visão</h6>
+                <p>Oferecer uma experiência gastronômica única e sustentável, com pratos preparados com os melhores ingredientes frescos e de qualidade.</p>
+                <h6>Missão</h6>
+                <p>Ser o restaurante de referência em comida vegana na região, conhecido pela excelência no atendimento e pela qualidade dos nossos pratos.</p>
+                <h6>Valores</h6>
+                <p>Qualidade, Sustentabilidade, Inovação e Atendimento ao Cliente.</p>
+            </div>
+            
+            <div class="footer-right">
+                <h2>Contactos</h2>
+                <p>Número: </p>
+                <p>Email: </p>
+                <p><strong>Endereço:</strong> Rua da Esperança, 123, Beira, Sofala, Moçambique</p>
+                <p><strong>Coordenadas:</strong> -19.8415° S, 34.8386° E</p>
+                <!-- Ou adicione o mapa aqui -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186460.21470450514!2d34.77426146558551!3d-19.843287859121027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1f4a4ac0e2f6c3c1%3A0x50e2d547ec2c6192!2sBeira%2C%20Mo%C3%A7ambique!5e0!3m2!1spt-PT!2sus!4v1631889270345!5m2!1spt-PT!2sus"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    function enviarMensagem() {
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const telefone = document.getElementById('telefone').value;
+        const mensagem = document.getElementById('mensagem').value;
+
+        // Validação simples
+        if (nome && email && telefone && mensagem) {
+            document.getElementById('mensagem-confirmacao').innerText = `Mensagem recebida com sucesso, ${nome}! Entraremos em contato em breve.`;
+            document.getElementById('mensagem-confirmacao').style.display = 'block';
+            document.getElementById('contact-form').reset(); // Reseta o formulário após o envio
+            return false; // Previne o envio real do formulário
+        }
+        return false; // Previne o envio real do formulário
+    }
+    </script>
+
+</body>
+</html>
